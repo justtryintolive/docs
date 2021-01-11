@@ -8,6 +8,23 @@ enabled = true
 name = "javascript"
 enabled = true
 
-[[analyzers]]
-name = "java"
-enabled = true
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "mocha",
+    "mongo",
+    "jasmine",
+    "browser",
+    "jest",
+    "jquery"
+  ]
+  plugins = [
+    "react",
+    "meteor",
+    "angularjs",
+    "vue",
+    "ember",
+    "angular"
+  ]
+  style_guide = "standard"
+  dialect = "flow"
